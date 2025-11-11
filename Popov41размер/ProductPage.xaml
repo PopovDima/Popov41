@@ -9,6 +9,6 @@
       Title="ProductPage" FontFamily="Comic Sans MS">
 
     <Grid>
-        <Button Content="Go" Click="Button_Click"></Button>
+        <Button Content="Go1" Click="Button_Click"></Button>
     </Grid>
 </Page>
