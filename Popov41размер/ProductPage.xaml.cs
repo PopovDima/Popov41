@@ -23,6 +23,10 @@ namespace Popov41размер
         public ProductPage()
         {
             InitializeComponent();
+
+            var currentProducts = Popov41Entities.GetContext().Product.ToList();
+
+            ProductListView.ItemsSource = currentProducts;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
