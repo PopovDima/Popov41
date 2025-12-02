@@ -14,6 +14,11 @@ namespace Popov41размер
     
     public partial class User
     {
+        public User()
+        {
+            this.Order = new HashSet<Order>();
+        }
+    
         public int UserID { get; set; }
         public string UserSurname { get; set; }
         public string UserName { get; set; }
@@ -22,6 +27,7 @@ namespace Popov41размер
         public string UserPassword { get; set; }
         public int UserRole { get; set; }
     
+        public virtual ICollection<Order> Order { get; set; }
         public virtual Role Role { get; set; }
     }
 }

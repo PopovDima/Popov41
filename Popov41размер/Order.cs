@@ -23,11 +23,12 @@ namespace Popov41размер
         public System.DateTime OrderDate { get; set; }
         public System.DateTime OrderDeliveryDate { get; set; }
         public int OrderPickupPointID { get; set; }
-        public string OrderUser { get; set; }
+        public Nullable<int> OrderUser { get; set; }
         public int OrderCode { get; set; }
         public string OrderStatus { get; set; }
     
         public virtual ICollection<OrderProduct> OrderProduct { get; set; }
         public virtual PickupPoint PickupPoint { get; set; }
+        public virtual User User { get; set; }
     }
 }

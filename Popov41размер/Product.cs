@@ -34,7 +34,8 @@ namespace Popov41размер
         public string ProductPhotoPath {
             get
             {
-                if (ProductPhoto == null) {
+                if (ProductPhoto == null)
+                {
                     return null;
                 }
 

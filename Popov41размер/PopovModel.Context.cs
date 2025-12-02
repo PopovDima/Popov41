@@ -21,7 +21,6 @@ namespace Popov41размер
         }
 
         private static Popov41Entities _context;
-
         public static Popov41Entities GetContext()
         {
             if (_context == null)
